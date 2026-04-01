@@ -1,0 +1,133 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+}
+.hidden { display: none; }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.card button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+#app {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  width: 260px;
+  background: #1e1e2f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-header {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+}
+#rooms {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  overflow-y: auto;
+}
+#rooms li {
+  padding: 12px;
+  cursor: pointer;
+}
+#rooms li:hover {
+  background: #33334d;
+}
+.room-create {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #333;
+}
+.room-create input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+.room-create button {
+  margin-left: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #4CAF50;
+  color: white;
+}
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.chat-header {
+  padding: 15px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+#messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.message b {
+  color: #4CAF50;
+}
+.input {
+  display: flex;
+  padding: 10px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+.input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+.input button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+}
